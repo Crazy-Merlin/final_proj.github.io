@@ -1,0 +1,33 @@
+.hamburger {
+  width: 24px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  display: none;
+
+  @include tablets {
+    display: inline-flex;
+  }
+}
+.hamburger__plank {
+  display: block;
+  background: #fff;
+  height: 4px;
+  border-radius: 10px;
+}
+.sidebar {
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background-color:#fff;
+  transform: translateX(100%);
+  z-index:11;
+  &.active {
+    transition: 1s;
+    transform: translateX(0);
+    
+  }
+}
