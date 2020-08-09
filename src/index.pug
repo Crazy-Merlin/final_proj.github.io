@@ -7,10 +7,7 @@ block content
         header.header
           .header__logo
             a.logo(href="#") ВА
-          a.hamburger(href="#")
-            span.hamburger__plank
-            span.hamburger__plank
-            span.hamburger__plank
+          
           .header__menu 
             nav.menu
               ul.menu__list
@@ -25,6 +22,10 @@ block content
                 li.socials__item
                   a(href=`${item === 'envelope' ? 'mailto:123123@yandex.ru' : '#'}`).socials__link
                     +icon(item, 'socials__icon')
+          a.hamburger(href="#")
+            span.hamburger__plank
+            span.hamburger__plank
+            span.hamburger__plank
 
         .hero__content
           .userinfo
@@ -81,8 +82,8 @@ block content
             .values__widget-container
               - 
                 var skillsCategories = [
-                  ["Frontend", [["HTML5",50], ["CSS3",50], ["Javascript",50], ["Vue.js",50]]],
-                  ["Workflow", [["GIT",30], ["Terminal",30], ["Gulp",30], ["Webpack",30]]]
+                  ["Frontend", [["HTML5",188], ["CSS3",223], ["Javascript",63], ["Vue.js",188]]],
+                  ["Workflow", [["GIT",223], ["Terminal",188], ["Gulp",126], ["Webpack",152]]]
                 ];
 
               ul.skills

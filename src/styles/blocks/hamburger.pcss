@@ -1,9 +1,9 @@
 .hamburger {
-  width: 24px;
+  width: 30px;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 20px;
+  height: 24px;
   display: none;
 
   @include tablets {
@@ -12,7 +12,7 @@
 }
 .hamburger__plank {
   display: block;
-  background: #fff;
+  background: #000;
   height: 4px;
   border-radius: 10px;
 }
@@ -27,7 +27,33 @@
   z-index:11;
   &.active {
     transition: 1s;
-    transform: translateX(0);
-    
+    transform: translateX(0); 
+     
   }
+}
+.sidebar.active .menu__list {
+  position:absolute;
+  flex-direction: column;
+  left: 15%;
+  top: 20%;
+  font-size: 34px;
+  line-height: 2;
+}
+.sidebar.active .socials {
+  position:absolute;
+  bottom:15%;
+  font-size: 34px;
+  text-align:center;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.sidebar.active p {
+  position:absolute;
+  right: 10%;
+  top: 5%;
+  font-size:36px;
+  font-weight:bold;
+  
+
 }
